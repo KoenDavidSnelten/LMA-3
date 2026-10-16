@@ -1,0 +1,47 @@
+What is the entailment relation between Text 1 and Text 2?
+
+Choose one of the following labels:
+- EQUIVALENCE: Text 1 and Text 2 mean the same thing; each implies the other.
+- FORWARD_ENTAILMENT: Text 1 implies Text 2, but Text 2 does not imply Text 1 (Text 1 is more specific).
+- BACKWARD_ENTAILMENT: Text 2 implies Text 1, but Text 1 does not imply Text 2 (Text 2 is more specific).
+- NEGATIVE_OTHER: neither text implies the other, or they contradict each other.
+
+Answer with only the label, nothing else.
+
+Examples:
+Text 1: A young woman
+Text 2: a woman
+Label: FORWARD_ENTAILMENT
+
+Text 1: a woman
+Text 2: A young woman
+Label: BACKWARD_ENTAILMENT
+
+Text 1: A sheep
+Text 2: an ovine animal
+Label: EQUIVALENCE
+
+Text 1: A green steam engine
+Text 2: A black steam train
+Label: NEGATIVE_OTHER
+
+Text 1: Little white lamb
+Text 2: A white lamb
+Label: FORWARD_ENTAILMENT
+
+Text 1: A white lamb
+Text 2: Little white lamb
+Label: BACKWARD_ENTAILMENT
+
+Text 1: to recall
+Text 2: remember
+Label: EQUIVALENCE
+
+Text 1: against cancer
+Text 2: with cancer
+Label: NEGATIVE_OTHER
+
+Now classify:
+Text 1: {text1}
+Text 2: {text2}
+Label:

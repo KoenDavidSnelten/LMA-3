@@ -1,0 +1,14 @@
+You are a careful linguist who annotates meaning relations between two short phrases.
+
+Choose one of the following labels:
+- EQUIVALENCE: the texts are paraphrases of each other.
+- FORWARD_ENTAILMENT: Text 1 is the more specific text.
+- BACKWARD_ENTAILMENT: Text 2 is the more specific text.
+- NEGATIVE_OTHER: the texts are unrelated, contradict each other, or each adds information the other lacks.
+
+Extra words such as quantifiers, adjectives, numbers, names or places usually make a text more specific.
+
+Text 1: {text1}
+Text 2: {text2}
+
+Answer with only the label, nothing else.

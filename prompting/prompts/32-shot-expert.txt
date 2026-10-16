@@ -1,0 +1,144 @@
+You are a careful linguist who annotates meaning relations between two short phrases.
+
+Choose one of the following labels:
+- EQUIVALENCE: the texts are paraphrases of each other.
+- FORWARD_ENTAILMENT: Text 1 is the more specific text.
+- BACKWARD_ENTAILMENT: Text 2 is the more specific text.
+- NEGATIVE_OTHER: the texts are unrelated, contradict each other, or each adds information the other lacks.
+
+Extra words such as quantifiers, adjectives, numbers, names or places usually make a text more specific.
+
+Examples:
+Text 1: A young woman
+Text 2: a woman
+Label: FORWARD_ENTAILMENT
+
+Text 1: a woman
+Text 2: A young woman
+Label: BACKWARD_ENTAILMENT
+
+Text 1: A sheep
+Text 2: an ovine animal
+Label: EQUIVALENCE
+
+Text 1: A green steam engine
+Text 2: A black steam train
+Label: NEGATIVE_OTHER
+
+Text 1: Little white lamb
+Text 2: A white lamb
+Label: FORWARD_ENTAILMENT
+
+Text 1: A white lamb
+Text 2: Little white lamb
+Label: BACKWARD_ENTAILMENT
+
+Text 1: to recall
+Text 2: remember
+Label: EQUIVALENCE
+
+Text 1: against cancer
+Text 2: with cancer
+Label: NEGATIVE_OTHER
+
+Text 1: about Syria
+Text 2: Syria
+Label: FORWARD_ENTAILMENT
+
+Text 1: Syria
+Text 2: about Syria
+Label: BACKWARD_ENTAILMENT
+
+Text 1: in the center
+Text 2: within the middle
+Label: EQUIVALENCE
+
+Text 1: driving
+Text 2: is riding
+Label: NEGATIVE_OTHER
+
+Text 1: A female toddler
+Text 2: Baby
+Label: FORWARD_ENTAILMENT
+
+Text 1: Baby
+Text 2: A female toddler
+Label: BACKWARD_ENTAILMENT
+
+Text 1: dressed in
+Text 2: is wearing
+Label: EQUIVALENCE
+
+Text 1: taking on
+Text 2: is picking up
+Label: NEGATIVE_OTHER
+
+Text 1: Thailand 's opposition Democrat Party
+Text 2: Thai opposition party
+Label: FORWARD_ENTAILMENT
+
+Text 1: Thai opposition party
+Text 2: Thailand 's opposition Democrat Party
+Label: BACKWARD_ENTAILMENT
+
+Text 1: This is a black and white picture
+Text 2: A black and white photo
+Label: EQUIVALENCE
+
+Text 1: immune system
+Text 2: human immunity
+Label: NEGATIVE_OTHER
+
+Text 1: St. Bernard dog
+Text 2: The large brown and white dog
+Label: FORWARD_ENTAILMENT
+
+Text 1: The large brown and white dog
+Text 2: St. Bernard dog
+Label: BACKWARD_ENTAILMENT
+
+Text 1: with brown spots
+Text 2: with brown markings
+Label: EQUIVALENCE
+
+Text 1: arrested Boston bomber
+Text 2: for Boston bomb suspect
+Label: NEGATIVE_OTHER
+
+Text 1: in east Ukraine
+Text 2: in Ukraine
+Label: FORWARD_ENTAILMENT
+
+Text 1: in Ukraine
+Text 2: in east Ukraine
+Label: BACKWARD_ENTAILMENT
+
+Text 1: are posing
+Text 2: holding a pose
+Label: EQUIVALENCE
+
+Text 1: 's nuclear negotiating team
+Text 2: 's nuclear quest
+Label: NEGATIVE_OTHER
+
+Text 1: Israeli soldiers
+Text 2: Israeli soldier
+Label: FORWARD_ENTAILMENT
+
+Text 1: Israeli soldier
+Text 2: Israeli soldiers
+Label: BACKWARD_ENTAILMENT
+
+Text 1: off disputed islands
+Text 2: off the contested islands
+Label: EQUIVALENCE
+
+Text 1: to release
+Text 2: Releases
+Label: NEGATIVE_OTHER
+
+Now classify:
+Text 1: {text1}
+Text 2: {text2}
+
+Answer with only the label, nothing else.

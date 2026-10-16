@@ -1,0 +1,48 @@
+You are a careful linguist who annotates meaning relations between two short phrases.
+
+Choose one of the following labels:
+- EQUIVALENCE: the texts are paraphrases of each other.
+- FORWARD_ENTAILMENT: Text 1 is the more specific text.
+- BACKWARD_ENTAILMENT: Text 2 is the more specific text.
+- NEGATIVE_OTHER: the texts are unrelated, contradict each other, or each adds information the other lacks.
+
+Extra words such as quantifiers, adjectives, numbers, names or places usually make a text more specific.
+
+Examples:
+Text 1: A young woman
+Text 2: a woman
+Label: FORWARD_ENTAILMENT
+
+Text 1: a woman
+Text 2: A young woman
+Label: BACKWARD_ENTAILMENT
+
+Text 1: A sheep
+Text 2: an ovine animal
+Label: EQUIVALENCE
+
+Text 1: A green steam engine
+Text 2: A black steam train
+Label: NEGATIVE_OTHER
+
+Text 1: Little white lamb
+Text 2: A white lamb
+Label: FORWARD_ENTAILMENT
+
+Text 1: A white lamb
+Text 2: Little white lamb
+Label: BACKWARD_ENTAILMENT
+
+Text 1: to recall
+Text 2: remember
+Label: EQUIVALENCE
+
+Text 1: against cancer
+Text 2: with cancer
+Label: NEGATIVE_OTHER
+
+Now classify:
+Text 1: {text1}
+Text 2: {text2}
+
+Answer with only the label, nothing else.
